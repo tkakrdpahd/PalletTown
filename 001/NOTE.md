@@ -28,6 +28,24 @@ The former indicates that the parameter list is unknown, while the latter explic
 
 The difference is subtle, but intentional: it reflects a distinction between unknown and none—a distinction that early C eventually had to make explicit.
 
+### JavaScript
+
+You might wonder why JavaScript suddenly appears here.  
+After encountering the parameter `void`, what came to my mind was not another C concept, but JavaScript’s `object`.
+
+At this stage—still 001, or rather 001-XXX—I am not going to discuss data formats such as JSON.  
+
+That is a topic better revisited later, when this project reaches vcpkg, C++, and the Drogon framework.
+
+Still, it is worth mentioning this briefly.
+
+Before the emergence of TypeScript, JavaScript had a peculiar feeling:  
+almost everything felt like just a string.
+
+To recall that time—debugging meant inserting dozens of `console.log()` statements into a single JavaScript file spanning hundreds of thousands of lines, trying to figure out *what that thing actually was*.  
+
+React did not exist yet, either.
+
 ## Build & Run
 
 In *C Programming: A Modern Approach* by King (2008), the author introduces the compiler and linker early on using `gcc`.  
