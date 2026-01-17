@@ -1,9 +1,11 @@
-#include <unistd.h>
+/**
+ * @file main.c
+ * @brief Main entry point for the Hello World program.
+ */
+
+#include "HelloWorld.h"
 
 int main(void) {
-    const char msg[] = "hello, world\n";
-    
-    write(1, msg, sizeof(msg) - 1);
-
+    hello_world();
     return 0;
 }
