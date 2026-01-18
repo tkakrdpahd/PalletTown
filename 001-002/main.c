@@ -1,8 +1,20 @@
 #include <stdio.h>
 
+void add(int *a) {
+
+    int temp = *a + 1;
+    *a = temp;
+
+    printf("In add(): a=%p, *a=%d\n", (void*)a, *a);
+
+    return;
+}
+
 int main(void) {
-    int i[] = {1, 2, 3};
+    int i[] = {1, 20, 3};
     int j = 0;
+
+    add(&j);
 
     int *p = i;
     int *q = &j;
