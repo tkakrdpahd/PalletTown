@@ -36,6 +36,9 @@ int main(void) {
 ## Pointer
 When we first encounter pointers, we learn that a pointer is a memory address; at least for those who are just starting to learn C and memorizing things, many people would have memorized it as a memory address. Before we delve into double pointers, multiple pointers, multiple pointer arrays, and multidimensional pointer arrays, let's learn more about `*` and `&`, which have tormented us for decades.
 
+### Operator
+
+
 ## Assembly
 ### Background
 Before continuing to illustrate assembly code, I think it would be good to briefly introduce a project called Super Mario Bros. Disassembly; [GitHub](https://gist.github.com/1wErt3r/4048722).
@@ -46,7 +49,7 @@ My first encounter with assembly goes back to my middle and high school days, wh
 
 When we go down to the level of CPU, GPU, or motherboard's firmware, we come across how specific memory addresses are understood and executed during the hardware load phase; for instance, the fixed memory addresses `0xF000` and `0xFFFFFFF0` that are first loaded when the power button is pressed. And if we go down to the level of directly handling sensors, we find ourselves calculating resistance and voltage, soldering, and sometimes smelling something burning.
 
-### SP/LR Register
+### Stack Pointer/Link Register Register
 
 ``` sh
 objdump -d PalletTown > PalletTown.asm
@@ -85,4 +88,9 @@ It might be shocking to modern programmers that past programmers considered asse
 
 I, too, am a modern developer who has mainly dealt with high-level languages, so it's not easy to clearly understand the above assembly code at once. However, pointers; or more precisely, the hardware allocation and utilization of data, can be clearly understood just by looking at the first line.
 
-Stack Pointer/Link Register ... .
+``` asm
+0000000100000890 <_add>:
+100000890: d100c3ff    	sub	sp, sp, #0x30
+```
+
+sp methods ... https://developer.arm.com/documentation/ddi0403/ee/?lang=en.
