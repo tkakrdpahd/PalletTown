@@ -34,7 +34,7 @@ int main(void) {
 ```
 
 ## Pointer
-...
+When we first encounter pointers, we learn that a pointer is a memory address; at least for those who are just starting to learn C and memorizing things, many people would have memorized it as a memory address. Before we delve into double pointers, multiple pointers, multiple pointer arrays, and multidimensional pointer arrays, let's learn more about `*` and `&`, which have tormented us for decades.
 
 ## Assembly
 ### Background
@@ -83,4 +83,6 @@ It might be shocking to modern programmers that past programmers considered asse
 1000008e8: d65f03c0    	ret
 ```
 
-Stack Pointer/Link Register
+I, too, am a modern developer who has mainly dealt with high-level languages, so it's not easy to clearly understand the above assembly code at once. However, pointers; or more precisely, the hardware allocation and utilization of data, can be clearly understood just by looking at the first line.
+
+Stack Pointer/Link Register ... .
