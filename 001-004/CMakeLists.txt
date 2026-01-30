@@ -10,4 +10,7 @@ add_executable(PalletTown
     main.c
 )
 
-find_package(Vulkan REQUIRED) # Find Vulkan package
+find_package(Vulkan REQUIRED)
+find_package(SDL2 REQUIRED)
+
+target_link_libraries(PalletTown PRIVATE Vulkan::Vulkan SDL2::SDL2) # Link Vulkan and SDL libraries to the executable
