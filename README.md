@@ -34,6 +34,11 @@ Dynamic memory management with malloc, realloc, calloc, and double pointers.
 
 [001-003 NOTE](./001-003/NOTE.md)
 
+##### 001-004 Parallel Processing
+parallel processing example with vulkan + sdl2
+
+[001-004 NOTE](./001-004/NOTE.md)
+
 #### 002 Low-Level
 Raw terminal I/O control using termios and POSIX system calls.
 
